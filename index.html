@@ -6,28 +6,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
     <title>WebStudio</title>
   </head>
   <body>
     <header>
       <div class="container header">
-      <nav class="header_navigation">
-        <a class="Logo" href="#">WebStudio</a>
-        <div class="container_link">
+      <nav class="header">
+        <a class="header__Logo" href="#">WebStudio</a>
+        <div class="containerLink">
           <ul>
-            <li class="header_item"><a class="link active" href="./index.html">Estudio</a></li>
-            <li class="header_item"><a class="link" href="./portfolio.html">Portafolio</a></li>
-            <li class="header_item"><a class="link" href="#">Contactos</a></li>
+            <li class="containerLink__item"><a class="link active" href="./index.html">Estudio</a></li>
+            <li class="containerLink__item"><a class="link" href="./portfolio.html">Portafolio</a></li>
+            <li class="containerLink__item"><a class="link" href="#">Contactos</a></li>
           </ul>
         </div>
       </nav>
-        <div class="container_link">
+        <div class="containerLink">
           <ul>
-            <li class="header_contact"><a href="mailto:info@devstudio.com" class="title-text1">
+            <li class="containerLink__contact"><a href="mailto:info@devstudio.com" class="title-text1">
               <svg class="email" width="16" height="12"><use xlink:href="./images/icons.svg#icon-email
                 "></use></svg>info@devstudio.com</a></li>
-            <li class="header_contact"><a href="tel:+525555296000"  class="title-text1">
+            <li class="containerLink__contact"><a href="tel:+525555296000"  class="title-text1">
               <svg class="email" width="10" height="16"><use xlink:href="./images/icons.svg#icon-smartphone
                 "></use></svg>+52 55 5529 6000</a></li>
           </ul>
@@ -41,7 +41,7 @@
       <button data-modal-open class="button2" type="button">Solicite nuestro servicio</button>
     </div>
     <div class="contents">
-      <div class="text">
+      <div class="contents__text">
         <svg class="svgs-1" width="270" height="120"><use xlink:href="./images/icons.svg#icon-antenna
           "></use></svg>
         <h3>ATENCIÓN A LOS DETALLES</h3>
@@ -50,7 +50,7 @@
           así desarrollar una solución a su medida.
         </p>
       </div>
-      <div class="text">
+      <div class="contents__text">
         <svg class="svgs-1" width="270" height="120"><use xlink:href="./images/icons.svg#icon-clock
           "></use></svg>
         <h3>PUNTUALIDAD</h3>
@@ -60,7 +60,7 @@
           acordados.
         </p>
       </div>
-      <div class="text">
+      <div class="contents__text">
         <svg class="svgs-1" width="270" height="120"><use xlink:href="./images/icons.svg#icon-planning
           "></use></svg>
         <h3>PLANIFICACIÓN</h3>
@@ -69,7 +69,7 @@
           aplicación de soluciones.
         </p>
       </div>
-      <div class="text">
+      <div class="contents__text">
         <svg class="svgs-1" width="270" height="120"><use xlink:href="./images/icons.svg#icon-technology
           "></use></svg>
         <h3>TEGNOLOGÍA MODERNA</h3>
@@ -83,9 +83,9 @@
     <section>
       <h2>A qué nos dedicamos</h2>
       <ul class="equipment">
-        <li class="item">
-          <div class="parent-box">
-          <div class="container-img">
+        <li class="equipment__item">
+          <div class="equipment__parent-box">
+          <div class="equipment__container-img">
           <img
             src="images/first-picture.jpg"
             alt="codificando">
@@ -95,9 +95,9 @@
           </div>
           </div>
         </li>
-        <li class="item">
-          <div class="parent-box">
-            <div class="container-img">
+        <li class="equipment__item">
+          <div class="equipment__parent-box">
+            <div class="equipment__container-img">
            <img
               src="images/second-picture.jpg"
               alt="revicion">
@@ -107,9 +107,9 @@
           </div>
           </div>
         </li>
-        <li class="item">
-          <div class="parent-box">
-            <div class="container-img">
+        <li class="equipment__item">
+          <div class="equipment__parent-box">
+            <div class="equipment__container-img">
           <img
             src="images/third-picture.jpg"
             alt="elecciondelcolor">
@@ -132,7 +132,7 @@
             alt="fotoandres"
             width="270"
             height="260">
-          <div class="contents-card">
+          <div class="card__contents">
           <h3>Andrés Cubo</h3>
           <p>Diseñador de Productos</p>
           <svg class="redes" width="44" height="44"><use xlink:href="./images/icons.svg#icon-elipse-instagram
@@ -153,7 +153,7 @@
             alt="fotocarla"
             width="270"
             height="260">
-          <div class="contents-card">
+          <div class="card__contents">
           <h3>Carla Palacios</h3>
           <p>Desarrolladora Frontend</p>
           <svg class="redes" width="44" height="44"><use xlink:href="./images/icons.svg#icon-elipse-instagram
@@ -174,7 +174,7 @@
             alt="fotomario"
             width="270"
             height="260">
-          <div class="contents-card">
+          <div class="card__contents">
           <h3>Mario Dorado</h3>
           <p>Marketing</p>
           <svg class="redes" width="44" height="44"><use xlink:href="./images/icons.svg#icon-elipse-instagram
@@ -195,7 +195,7 @@
             alt="fotopablo"
             width="270"
             height="260">
-          <div class="contents-card">
+          <div class="card__contents">
           <h3>Pablo Mijangos</h3>
           <p>Diseñador IU</p>
           <svg class="redes" width="44" height="44"><use xlink:href="./images/icons.svg#icon-elipse-instagram
@@ -215,17 +215,17 @@
     <section class="container">
       <h2>Clientes Regulares</h2>
       <div class="customers">
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers1
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers1
             "></use></svg>
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers2
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers2
             "></use></svg>
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers3
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers3
             "></use></svg>
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers4
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers4
             "></use></svg>
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers5
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers5
             "></use></svg>
-          <svg class="svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers6
+          <svg class="customers__svgs" width="170" height="81"><use xlink:href="./images/icons.svg#icon-customers6
             "></use></svg>
       </div>
     </section>
